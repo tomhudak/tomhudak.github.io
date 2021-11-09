@@ -1,0 +1,51 @@
+---
+layout: default
+permalink: /
+---
+
+<div class="wrapper content">
+  <div class="intro-left">
+    <div class="half-content">
+      <p>Hi!</p>
+      <p>Welcome to my personal website. Please check out my online presence and publications here and also on social media.</p>
+      <div class="center">
+        <a href="https://www.linkedin.com/in/{{ site.linkedin-username }}" class="fa fa-linkedin"></a>
+        <a href="https://twitter.com/{{ site.twitter-username }}" class="fa fa-twitter"></a>
+        <a href="https://medium.com/@{{ site.medium-username }}" class="fa fa-medium"></a>
+        <a href="https://github.com/{{ site.github-username }}" class="fa fa-github"></a>
+      </div>
+    </div>
+  </div>
+  <div class="intro-right">
+    <div class="half-content center">
+      <img class="intro-img" src="./assets/summer.jpeg" alt="Yep, this is me"/>
+      <div class="center">
+        <p>Yep, this is me.</p>
+      </div>
+  </div>
+  </div>
+</div>
+<div>
+  <h1>Blog posts</h1>
+
+  {% for post in site.posts %}
+  <div class="content">
+    <div class="wrapper">
+      <a class="intro-left" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <p style="text-align: right;" class="intro-right">{{ post.date | date: "%b %-d, %Y" }}</p>
+    </div>
+    <div>
+      <p class="post-description">{{ post.description }}</p>
+    </div>
+    <hr>
+  </div>
+  {% endfor %}
+
+</div>
+
+<div>
+  <p class="center"> 
+    <a class="fa fa-rss" href="{{ "/feed.xml" | prepend: site.baseurl }}"></a>
+    Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
+  </p>
+</div>
