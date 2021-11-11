@@ -188,6 +188,7 @@ img.intro-img {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+    max-width: 1024px;
 }
 
 .wrapper {
@@ -208,5 +209,27 @@ ul.footer {
     
     .intro-right {
         width: 100%;
+    }
+
+    .content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 468px) {
+    li.page-link:nth-last-child(-n+2) a:after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    li.page-link:last-child {
+        display: block;
+        margin-left: 16px;
     }
   }
