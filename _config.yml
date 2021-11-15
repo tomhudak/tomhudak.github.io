@@ -70,3 +70,7 @@ linkedin-username: tamas-hudak
 exclude:
   - .devcontainer
   - .vscode
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
