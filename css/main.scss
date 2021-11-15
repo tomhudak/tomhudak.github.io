@@ -191,8 +191,7 @@ img.intro-img {
 .content {
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
-    max-width: 1024px;
+    max-width: 730px;
 }
 
 .wrapper {
@@ -202,6 +201,7 @@ img.intro-img {
 ul.footer {
     list-style-type: none;
     margin-top: 40px;
+    padding-inline-start: 0px;
 }
 
 p.italic {
@@ -213,7 +213,7 @@ p.italic {
 }
 
 .build {
-  width: 85%;
+  width: 100%;
   right: auto;
   position: absolute;
   text-align: right;
