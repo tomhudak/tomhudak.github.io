@@ -62,6 +62,7 @@ title: Tamas Hudak
 email: tamas@hudak-balogh.hu
 description: "Software Developer"
 url: "https://tomhudak.github.io"
+baseurl: "https://tomhudak.github.io"
 github-username: tomhudak
 twitter-username: tamas_hudak
 medium-username: tamashudak

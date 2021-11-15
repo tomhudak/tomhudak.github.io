@@ -1,4 +1,4 @@
-name: Jekyll site CI
+name: tomhudak.github.io Jekyll site CI
 
 on:
   push:
