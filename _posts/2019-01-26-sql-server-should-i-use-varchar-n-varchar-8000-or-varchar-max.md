@@ -15,14 +15,14 @@ If you are looking for what's the difference between `char` and `varchar` or `va
 
 ### TL;DR
 
-Use `nvarchar(n)` if you know that your data is not longer than 4000 characters and want to be 100% sure to be very performant (or pick 8000 lenghts if you are sure you don't use Unicode characters and can use `varchar`).
+Use `nvarchar(n)` if you know that your data is not longer than 4000 characters and want to be 100% sure to be very performant (or pick 8000 lengths if you are sure you don't use Unicode characters and can use `varchar`).
 
 ## Reasons for using varchar(n)
 - Your data is stored physically in row therefore have a more performant execution plan on it.
 - You can create indexes on your column.
 
 ## What's up with varchar(8000)?
-The max number for n is 8000 that you can specify for `varchar`. Reason being that the **maximum lenght you can store in row is 8 kB**, and every character in `varchar` takes 1 byte.
+The max number for n is 8000 that you can specify for `varchar`. Reason being that the **maximum length you can store in row is 8 kB**, and every character in `varchar` takes 1 byte.
 
 > The max for `nvarchar` is `nvarchar(4000)` since that one takes 2 bytes per char.
 

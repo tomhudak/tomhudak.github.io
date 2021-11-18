@@ -11,9 +11,9 @@ comments: true
 
 Most of the new HDDs should spin down out of the box but sometimes you might realize that your connected USB HDD is still spinning despite you haven't used your favorite Raspberry Pi for a while. So what to do now?
 
-I am using on old WD Elements HDD plugged to a Raspberry Pi 2 Model B with an OSMC installed on it as OS but it should work the same way on newer Raspberry Pis and with other distibutions installed on it as well.
+I am using on old WD Elements HDD plugged to a Raspberry Pi 2 Model B with an OSMC installed on it as OS but it should work the same way on newer Raspberry Pis and with other distributions installed on it as well.
 
-First of all, you might want to try setting up a spindown rule with hdparm using this guide - altough it never worked for me not even with other HDDs.
+First of all, you might want to try setting up a spindown rule with hdparm using this guide - although it never worked for me not even with other HDDs.
 So if the above method is non efficient for you then the following steps should be executed using your favorite SSH client. Remote to your RPi then execute the following commands in your home folder (credits goes for HTPC guides):
 
 ```bash
@@ -44,7 +44,7 @@ and you should see (alongside with many other lines) something like:
 
 `/dev/sdaX 494155016 320916628 146863476 69% /media/YourMount`
 
-Here your reponse should show sdaX where X is a number.
+Here your response should show sdaX where X is a number.
 
 Now you can try spinning down your HDD immediately with the following command:
 
