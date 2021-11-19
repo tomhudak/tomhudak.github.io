@@ -9,6 +9,8 @@ twitter-username: tamas_hudak
 medium-username: tamashudak
 linkedin-username: tamas-hudak
 
+google_analytics: G-H6XNSVCRML
+
 exclude:
   - .devcontainer
   - .vscode
