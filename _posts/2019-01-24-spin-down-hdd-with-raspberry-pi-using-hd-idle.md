@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Spin down HDD with Raspberry Pi using hd-idle"
-date:   2019-01-24 14:00:00 +0100
+title: "Spin down HDD with Raspberry Pi using hd-idle"
+permalink: /blog/2019-01-24-spin-down-hdd-with-raspberry-pi-using-hd-idle/
+date: 2019-01-24 14:00:00 +0100
 categories: raspberry pi hd-idle hdd spin down
-description:  "A guide on how to make your HDD stop when it is not is use."
+description: "A guide on how to make your HDD stop when it is not is use."
 comments: true
 ---
 

@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "SQL Server — Should I use varchar(n), varchar(8000) or varchar(MAX)?"
-date:   2019-01-26 14:00:00 +0100
-categories: raspberry pi hd-idle hdd spin down
-description:  "A brief summary to help you decide if you run into this."
+title: "SQL Server — Should I use varchar(n), varchar(8000) or varchar(MAX)?"
+permalink: /blog/2019-01-26-sql-server-should-i-use-varchar-n-varchar-8000-or-varchar-max/
+date: 2019-01-26 14:00:00 +0100
+categories: sql server varchar nvarchar
+description: "A brief summary to help you decide if you run into this."
 comments: true
 ---
 

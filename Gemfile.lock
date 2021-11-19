@@ -279,6 +279,7 @@ DEPENDENCIES
   github-pages
   jekyll (~> 3.9.0)
   jekyll-feed (~> 0.12)
+  jekyll-seo-tag
   jekyll-sitemap
   tzinfo (~> 1.2)
   tzinfo-data

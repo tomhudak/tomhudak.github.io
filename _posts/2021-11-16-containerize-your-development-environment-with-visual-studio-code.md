@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Containerize Your Development Environment With Visual Studio Code"
-date:   2021-11-16 8:00:00 +0100
+title: "Containerize Your Development Environment With Visual Studio Code"
+permalink: /blog/2021-11-16-containerize-your-development-environment-with-visual-studio-code/
+date: 2021-11-16 8:00:00 +0100
 categories: visual studio core remote container docker compose
-description:  "A brief introduction to show the potential VS Code Dev Containers have."
+description: "A brief introduction to show the potential VS Code Dev Containers have."
 comments: true
 published: true
 image:

@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Building a .NET Core App Server to Send Firebase Cloud Messaging Message Requests"
-date:   2020-03-22 14:00:00 +0100
+title: "Building a .NET Core App Server to Send Firebase Cloud Messaging Message Requests"
+permalink: /blog/2020-03-22-building-a-net-core-app-server-to-send-firebase-cloud-messaging-message-requests/
+date: 2020-03-22 14:00:00 +0100
 categories: dotnet core firebase push message
-description:  "With this guide you can set up a Firebase messaging connection using .NET"
+description: "With this guide you can set up a Firebase messaging connection using .NET"
 comments: true
 ---
 
