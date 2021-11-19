@@ -20,7 +20,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-image:
-  path: /assets/summer.jpeg
-  height: 192
-  width: 192  
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/summer.jpeg
