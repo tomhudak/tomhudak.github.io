@@ -19,3 +19,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+image:
+  path: /assets/summer.jpeg
+  height: 192
+  width: 192  

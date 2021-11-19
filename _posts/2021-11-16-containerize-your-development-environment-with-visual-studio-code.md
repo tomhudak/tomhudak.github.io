@@ -6,6 +6,10 @@ categories: visual studio core remote container docker compose
 description:  "A brief introduction to show the potential VS Code Dev Containers have."
 comments: true
 published: true
+image:
+    path: assets/2021-11-16-dev-containers/0-banner.jpeg
+    width: 730
+    height: 430
 ---
 
 ![Containerize everything!](/assets/2021-11-16-dev-containers/0-banner.jpeg)
