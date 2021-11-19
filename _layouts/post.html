@@ -4,8 +4,7 @@ layout: default
 <div class="content">
   <h1>{{ page.title }}</h1>
  
-  <p class="post-description"><i>{{ page.date | date: "%b %-d, %Y" }} — {{ page.description }}</i></p>
-
+  <p class="post-description"><i>{{ page.date | date: "%b %-d, %Y" }} — {{ page.description }} — {% include read-time.html content=content %} </i></p>
   <article class="post-content">
     {{ content }}
   </article>
