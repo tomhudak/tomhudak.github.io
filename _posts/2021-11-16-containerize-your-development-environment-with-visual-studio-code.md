@@ -40,7 +40,9 @@ Assuming you have the prerequisites installed, in order to kick start a new proj
 
 - Select your desired language, version, and additional components (In my example I've selected `Node.js` and version 16 without additional components)
 
-For the example let's create an `app.js` file in our folder.
+Your container is now being built then your project should be initialized.
+
+As a demo, let's create an `app.js` file in our folder.
 ```js
 const express = require('express')
 const app = express()
@@ -67,7 +69,7 @@ npm install express
 ```
 Now `express` is installed and added to your `package.json` as well.
 
-You can start your application now but typing the following to the terminal:
+You can start your application now by typing the following to the terminal:
 ```bash
 node app.js
 ```
@@ -113,7 +115,7 @@ Now, you have a `.devcontainer` folder generated. In it, there's the `devcontain
 }
 ```
 
-It can also can refer to  a [`docker-compose.yml`](https://github.com/tomhudak/go-todolist-api/blob/master/.devcontainer/docker-compose.yml) as I have in my [go-todolist-api](https://github.com/tomhudak/go-todolist-api/blob/master/.devcontainer/devcontainer.json) project's `devcontainer.json`. 
+It can also can refer to  a [`docker-compose.yml`](https://github.com/tomhudak/go-todolist-api/blob/master/.devcontainer/docker-compose.yml) as I have in my [go-todolist-api](https://github.com/tomhudak/go-todolist-api/blob/master/.devcontainer/devcontainer.json) project's `devcontainer.json`. (Check it our [here](https://github.com/tomhudak/go-todolist-api/blob/master/.devcontainer/devcontainer.json).)
 
 Let me share some details on some of the lines in the above `devcontainer.json`.
 - `dockerComposeFile` indicates that this container is built with a compose file.
