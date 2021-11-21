@@ -18,21 +18,22 @@ img {
 }
 
 a {
-  font-weight: 600;  
+  font-weight: 600; 
 }
 
 a:link {
     text-decoration: none;
-    color:#0D77AD
+    color:#0D77AD;
+    overflow-wrap: break-word;
 }
   
 a:visited {
     text-decoration: none;
-    color:#0D77AD
+    color:#0D77AD;
 }
 
 a:hover {
-    color:#87CEFA
+    color:#87CEFA;
 }
 
 button, a {
