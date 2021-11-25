@@ -1,36 +1,36 @@
 ---
 layout: post
 title: "Create a Digital Clock From Scratch with Scroll pHAT and Raspberry Pi"
-permalink: /blog/2021-11-23-create-a-digital-clock-from-scratch-with-scroll-phat-and-raspberry-pi/
-date: 2021-11-23 18:00:00 +0100
+permalink: /blog/2021-11-25-create-a-digital-clock-from-scratch-with-scroll-phat-and-raspberry-pi/
+date: 2021-11-25 21:00:00 +0100
 categories: raspberry pi scroll phat clock solder
 description: "Everything that is needed from opening the box to make this little LED display work."
 comments: true
-published: false
+published: true
 image:
-    path: assets/2021-11-23-scroll-phat/0-scroll-phat.jpeg
+    path: assets/2021-11-25-scroll-phat/0-scroll-phat.jpg
     width: 730
-    height: 430
+    height: 411
 ---
 
-![Scroll pHAT](/assets/2021-11-23-scroll-phat/0-scroll-phat.jpeg)
+![Scroll pHAT](/assets/2021-11-25-scroll-phat/0-scroll-phat.jpg)
 
-Scroll pHAT is a LED display designed by Pimoroni working with Raspberry Pi. The first version contains 11x5 LEDs while a more recent releases of Scroll Phat HD and Mini with 17x7 pixels. Although there are good documentation, set up guides and one-line installers (which don't work for me), in this tutorial I aim for summing up everything that is required for making it work from scratch.
+Scroll pHAT is a LED display designed by [Pimoroni](https://shop.pimoroni.com/) working with [Raspberry Pi](https://www.raspberrypi.org/). The first version contains 11x5 LEDs while a more recent releases of Scroll Phat HD and Mini with 17x7 pixels. Although there are good documentation, set up guides and one-line installers (which don't work for me), in this tutorial I aim for collecting everything that is required for making it work from scratch.
 
 Although this guide focuses on the above display, the process to set up a very popular [16x2 LCD Display](https://components101.com/displays/16x2-lcd-pinout-datasheet) is quite similar.
 
 As an example I am going to set up a clock on the display that is scrolling infinitely. 
 
-I am using a Raspberry Pi 2 with a Raspbian based distro (OSMC) installed on it.
+I am using a Raspberry Pi 2 with a Raspbian based distro ([OSMC](https://osmc.tv/)) installed on it.
 
-Please note that while Scroll Phat HD is a better version of this, it requires a different library to make it work.
+Please note that while [Scroll Phat HD and Mini](https://shop.pimoroni.com/?q=scroll+phat) are a newer version of this, it requires a different library to make it work ([github.com/pimoroni/scroll-phat-hd](https://github.com/pimoroni/scroll-phat-hd)).
 
 ## Required items
 
 - Raspberry Pi (any type would work)
 - Scroll pHAT
 - Soldering kit (unless your display/RPi are pre-soldered)
-- Cables (26pins or Dupont cables)
+- Cables (26pin ribbon or Dupont cables)
 
 ## Soldering
 
@@ -48,10 +48,10 @@ These are:
 - 1x 5v Power
 - 1x Ground
 
-[![Pinout](/assets/2021-11-23-scroll-phat/1-pinout.png)](/assets/2021-11-23-scroll-phat/1-pinout.png)
+[![Pinout](/assets/2021-11-25-scroll-phat/1-pinout.jpg)](/assets/2021-11-25-scroll-phat/1-pinout.jpg)
 <p class="italic center">Screenshot from pinout.xyz</p>
 
-[![Soldering](/assets/2021-11-23-scroll-phat/2-soldering.png)](/assets/2021-11-23-scroll-phat/2-soldering.png)
+[![Soldering](/assets/2021-11-25-scroll-phat/2-soldering.jpg)](/assets/2021-11-25-scroll-phat/2-soldering.jpg)
 <p class="italic center">Shining my (mediocre) soldering skills</p>
 
 If you need to solder, please checkout [pinout.xyz](https://pinout.xyz/pinout/scroll_phat) for full reference!
@@ -66,7 +66,7 @@ This guide is assuming you have a Raspbian based OS installed on your RPi and yo
 
 Scroll pHAT is communicating over I2C so, that needs to be enabled to be able to make it work. For that we need to edit `config.txt`
 ```bash
-osmc@osmc-Preston:~$ sudo nano /boot/config.txt
+pi@raspberry:~$ sudo nano /boot/config.txt
 ```
 
 and add
@@ -85,14 +85,14 @@ After the above steps **reboot your Pi**.
 
 Let's check if the display is connected properly. In order to that let's install `i2cdetect`
 ```bash
-osmc@osmc-Preston:~$ sudo apt install i2c-tools
+pi@raspberry:~$ sudo apt install i2c-tools
 ```
 
 then execute one of the following two commands to list the connected I2C devices. Should have similar responses:
 ```bash
-osmc@osmc-Preston:~$ sudo ls -l /dev/i2c*
+pi@raspberry:~$ sudo ls -l /dev/i2c*
 crw-rw---- 1 root i2c 89, 1 Nov 14 19:02 /dev/i2c-1
-osmc@osmc-Preston:~$ sudo i2cdetect -l
+pi@raspberry:~$ sudo i2cdetect -l
 i2c-1	i2c       	bcm2835 I2C adapter             	I2C adapter
 ```
 
@@ -100,7 +100,7 @@ i2c-1	i2c       	bcm2835 I2C adapter             	I2C adapter
 To check if the connection is proper and everything is working properly, let's run the following command where **1** should be your device ID is the number that is trailing `i2c-` in your results. The result should be similar as below, stating at least one integer number in the resulting sheet.
 
 ```bash
-osmc@osmc-Preston:~$ sudo i2cdetect -y 1
+pi@raspberry:~$ sudo i2cdetect -y 1
      0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
 00:          -- -- -- -- -- -- -- -- -- -- -- -- -- 
 10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
@@ -128,15 +128,15 @@ sudo pip2 install scrollphat
 
 Let's clone my source to get a working example:
 ```bash
-git clone TODO
+git clone https://github.com/tomhudak/py-scroll-phat.git
 ```
 (You can also clone [Pimoroni's repository](https://github.com/pimoroni/scroll-phat) and use the examples there.)
 
 Now you can navigate to the cloned folder, make your script executable and run it:
 ```bash
-TODO cd scroll-phat-examples
-chmod +x clock.py
-sudo python clock.py
+pi@raspberry:~$ cd py-scroll-phat
+pi@raspberry:~/py-scroll-phat$ chmod +x clock.py
+pi@raspberry:~/py-scroll-phat$ sudo python clock.py
 ```
 
 The current time should be scrolling now.
@@ -146,13 +146,13 @@ I2C requires root access by default, but you can use bcm2835 devices without roo
 
 When you listed the I2C devices above you could see that it belongs to the group named `i2c`.
 ```bash
-osmc@osmc-Preston:~$ ls -l /dev/i2c*
+pi@raspberry:~$ ls -l /dev/i2c*
 crw-rw---- 1 root i2c 89, 1 Nov 14 19:02 /dev/i2c-1
 ```
 
 Let's add your user to the above group.
 ```bash
-osmc@osmc-Preston:~$ sudo usermod -a -G i2c pi
+pi@raspberry:~$ sudo usermod -a -G i2c pi
 ```
 
 Make sure to **log in again**. Now you should be able to run your scripts and `i2cdetect` without root permisson (`sudo`).
@@ -163,8 +163,8 @@ If you want your Scroll pHAT to display when you restart your Raspberry Pi and e
 Let's start with registering a new service definition in `/lib/systemd/system/`.
 
 ```bash
-cd /lib/systemd/system/
-sudo nano scrollphat.service
+pi@raspberry:~$ cd /lib/systemd/system/
+pi@raspberry:/lib/systemd/system$ sudo nano scrollphat.service
 ```
 
 The service file should look like this:
@@ -176,7 +176,7 @@ After=multi-user.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python /home/pi/scroll-phat-examples/clock.py
+ExecStart=/usr/bin/python /home/pi/py-scroll-phat/clock.py
 Restart=on-abort
 
 [Install]
@@ -185,20 +185,20 @@ WantedBy=multi-user.target
 
 Save the file, then let's add some rights so that RPi could run it:
 ```bash
-sudo chmod 644 /lib/systemd/system/scrollphat.service
+pi@raspberry:~$ sudo chmod 644 /lib/systemd/system/scrollphat.service
 ```
 
 If that is ready let's refresh our services, enable our new `scrollphat.service` and start it!
 ```bash
-sudo systemctl daemon-reload
-sudo systemctl enable scrollphat.service
-sudo systemctl start scrollphat.service
+pi@raspberry:~$ sudo systemctl daemon-reload
+pi@raspberry:~$ sudo systemctl enable scrollphat.service
+pi@raspberry:~$ sudo systemctl start scrollphat.service
 ```
 
 After all this now you should have a new clock running!
 
-If you want to display something more I can recommend my 
-`weather.py` (TODO LINK)
+If you want to display something more complex I can recommend my 
+`weather.py` ([github.com/tomhudak/py-scroll-phat/blob/main/weather.py](https://github.com/tomhudak/py-scroll-phat/blob/main/weather.py)) script 
 that is displaying the current temperature and pollution data for the set city.
 
 ## Resources
