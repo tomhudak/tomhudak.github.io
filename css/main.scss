@@ -134,6 +134,11 @@ nav {
     margin-bottom: 16px;
 }
 
+.welcome {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 li.page-link a:after {
     color: #F2F2F2;
     content: " \2022";

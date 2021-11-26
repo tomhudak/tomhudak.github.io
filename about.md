@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Curriculum Vitae"
+title: "About me"
 description:  "Information about me"
-permalink: /cv
+permalink: /about
 include: true
 ---
 
-# Curriculum Vitae
+# About me
 
 <p class="center">
     <img src="../assets/tamas.jpeg" alt="Tamas Hudak" />
