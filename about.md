@@ -73,7 +73,7 @@ systems)
 
 2012 Aktuál Bau, **IT Intern** – Nyíregyháza, Hungary
 
->*Developing new financial, logistics and administration modules for the company’s ERP system.*
+>*Developed new financial, logistics and administration modules for the company’s ERP system.*
 
 >**Stack:** Stack: C#, Visual Basic, MSSQL
 
