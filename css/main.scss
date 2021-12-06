@@ -147,8 +147,9 @@ li.page-link a:after {
     display: inline;
 }
 
-li.page-link:last-child a:after {
+li.desktop-email a:after {
     content: "";
+    white-space: pre;
 }
 
 li.page-link {
@@ -241,6 +242,14 @@ p.italic {
   font-size: 0.9em;
 }
 
+li.smallscreen-email {
+    display: none;
+}
+
+li.desktop-email {
+    display: inline;
+}
+
 @media only screen and (max-width: 800px) {
     .intro-left {
         width: 100%;
@@ -262,15 +271,10 @@ p.italic {
     }
   }
 
-  @media only screen and (max-width: 468px) {
-    li.page-link:nth-last-child(-n+2) a:after {
+  @media only screen and (max-width: 530px) {
+    li.page-link:nth-last-child(-n+3) a:after {
         content: "\a";
         white-space: pre;
-    }
-
-    li.page-link:last-child {
-        display: block;
-        margin-left: 16px;
     }
 
     .build {
@@ -279,5 +283,40 @@ p.italic {
 
       .footer-container {
         position: absolute;
+    }
+  }
+
+
+  @media only screen and (max-width: 395px) {
+    li.page-link:nth-last-child(-n+4) a:after {
+        content: "";
+    }
+    
+    li.page-link:nth-last-child(-n+3) a:after {
+        content: " \2022";
+        white-space: pre;
+    }
+
+    li.page-link:nth-last-child(-n+1) a:after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    li.page-link:last-child {
+        display: inline;
+    }
+
+    li.smallscreen-email {
+        display: inline;
+    }
+
+    li.smallscreen-email a:after {
+        content: "";
+        white-space: pre;
+    }
+
+    li.desktop-email {
+        display:none;
+        visibility: hidden;
     }
   }

@@ -12,6 +12,11 @@ include: true
     <img src="../assets/tamas.jpeg" alt="Tamas Hudak" />
 </p>
 
+Hi! This is Tamás [tɒma:ʃ] a software engineer guy currently living in [Nyíregyháza, Hungary](https://www.google.com/maps/place/Ny%C3%ADregyh%C3%A1za/@47.9423955,21.700909,11z/data=!3m1!4b1!4m5!3m4!1s0x47389fe7b75757df:0x400c4290c1e11a0!8m2!3d47.9495324!4d21.7244053?hl=en). Delivering software solutions since 2012, mostly worked on scalabe, distributed and event-driven systems, but also on web applications and their APIs. I was mostly working on backend services, but constantly broadening my knowledge and getting familiar with front-end technologies as well (see my [learning projects](/projects)).  
+
+[Download my CV in PDF format](/assets/Tamas_Hudak_CV.pdf)
+
+---
 #### PERSONAL DATA
 Name: Tamás Hudák
 
@@ -25,66 +30,57 @@ E-mail: tamas@hudak-balogh.hu
 #### WORKING EXPERIENCE
 
 2021 – <span>&emsp;&emsp;</span> LogMeIn, **Senior Software Engineer** - Budapest (Remote), Hungary
->*Working on creating unified admin solutions for market leading password manager LastPass and GoTo products.*
+>*Creating unified admin solutions for market leading password
+manager LastPass and GoTo products.*
 
->Used technologies:
-React, TypeScript, Java, AngularJS, PHP, MySQL, Git, Selenium
+>**Project:** Full-stack web application development, API integration.
 
-2018 – 2021 Betsson Group, **Development Team Lead** / **Senior Developer** / **Developer** – Budapest, Hungary
+>**Stack:** AngularJS, React, TypeScript, Java, PHP, Jest, Selenium, MySQL, TeamCity,
+Docker
 
->*Relocated to the Budapest office from Malta and started working on developing backoffice tools used by Sportsbook Traders. Also fulfilled the Scrum Master role in my team. Later I also started leading one of the teams.*
+2018 – 2021 Betsson Group, **Development Team Lead** / **Senior Developer** – Budapest, Hungary
 
->Team Lead tasks:
-- Driving current and future projects.
-- Connecting the team with stakeholders.
-- Motivating and mentoring team members.
-- On-call and vacation planning, evaluating team member individual performance 
+>*Developed back office tools for Sportsbetting Traders. Scrum master and later team
+lead. On-call support.*
 
+>**Project:** Full-stack web application and distributed event-driven microservice
+system development.
 
->Developer tasks:
-- Matching business and technical requirements for upcoming projects.
-- Feature implementation.
-- Monitoring and applying performance optimizations on the current systems.
-- On-call support, incident root cause analysis.
-- Scrum Master tasks.
-- Onboarding and mentoring new team members.
-
->Used technologies and patterns:
-C#/.NET Core, MSSQL, RabbitMQ, ASP.NET Web Api, REST, SignalR, Redis, Splunk, Git, Docker, Microservices, DDD (Some experience with JavaScript, TypeScript, Angular, Redux, Jasmine, Elasticsearch)
+>**Stack:** Angular/JS, SignalR, ASP.NET Web Api, C#/.NET Core, MSSQL, RabbitMQ, Redis,
+TeamCity, Splunk, Docker, DDD, (Some experience with Elasticsearch)
 
 2017 – 2018 Betsson Group, **Backend Developer** – Ta’ Xbiex, Malta
 
->*Started working in the Betting Team responsible for developing and maintaining backend services for sportsbook bet placement and settlement.*
+>*Developed and maintained backend services for online sportsbook bet placement and
+settlement. On-call support. Breaking down monoliths to scalable microservices.*
 
->Tasks:
-- Feature implementation.
-- Monitoring and performance optimizations on the current systems.
-- Refactoring legacy systems to scale them out.
-- On-call support, incident root cause analysis.
+>**Project:** Distributed, event-driven microservice system, designed for high peak loads.
 
->Used technologies:
-C#/.NET Framework, MSSQL, Redis, RabbitMQ, WCF, ASP.NET Web Api, REST, Splunk, AppDynamics, Git, Specflow
+>**Stack:** WCF, ASP.NET Web Api, C#/.NET Framework, MSSQL, Specflow, RabbitMQ,
+Redis, TeamCity, Splunk, DDD
 
 2013 – 2017 RDI Software, **Software Developer** – Debrecen, Hungary
 
->*Was working in the team responsible for developing and maintaining the back-end and back office tools of the ordering system of McDonald’s.*
+>*Developed back-end and back office tools of the delivery ordering system of
+McDonald's.*
 
->Tasks:
-- Feature implementation.
-- Old system refactor to make it highly available and scalable.
-- Creating POCs to test new technologies to be used.
+>**Project:** Monolith services refactored to HA, scalable system. Thick client ported to
+web application.
 
->Used technologies:
-C#, MSSQL, Redis, RabbitMQ, Node.js, AngularJS, TypeScript, Selenium, Jasmine, Cassandra, Git, Specflow (ASP.NET MVC, Silverlight MVVM, TFS on Legacy systems)
+>**Stack:** AngularJS, Node.js (TypeScript), C#, MSSQL, Redis, RabbitMQ, Selenium,
+Jasmine, Cassandra, Specflow (ASP.NET MVC, WCF, Silverlight MVVM, on Legacy
+systems)
 
 2012 Aktuál Bau, **IT Intern** – Nyíregyháza, Hungary
 
 >*Developing new financial, logistics and administration modules for the company’s ERP system.*
 
->Used technologies: C#, Visual Basic, MSSQL
+>**Stack:** Stack: C#, Visual Basic, MSSQL
 
 ---
-#### CERTIFICATIONS
+#### CERTIFICATIONS & WORKSHOPS
+
+2020 Designing Microservices (NDC Workshop)
 
 2019 Certified ScrumMaster
 
