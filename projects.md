@@ -28,6 +28,6 @@ With this setup, besides the language basics, I can get to know how routing, CRU
 - Angular Frontend [ng-todolist-fe](https://github.com/tomhudak/ng-todolist-fe) - Learned the differences from AngularJS, HTTP handling.
 - React Frontend [react-todolist-fe](https://github.com/tomhudak/react-todolist-fe) - Learned React basics, HTTP handling.
 
-## This page
+## This site
 
-This page, besides sharing my stuff was created to learn [Jekyll](https://jekyllrb.com/) some CSS, and [Github Actions](https://github.com/features/actions). Source can be found at [github.com/tomhudak/tomhudak.github.io](https://github.com/tomhudak/tomhudak.github.io)
+This site, besides sharing my stuff was created to learn [Jekyll](https://jekyllrb.com/) some CSS, and [Github Actions](https://github.com/features/actions). Source can be found at [github.com/tomhudak/tomhudak.github.io](https://github.com/tomhudak/tomhudak.github.io)
